@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "e6da19a5-08ce-4538-960f-542d3ac8cf59",
+		"name": "interview Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10233839",
+		"_collection_link": "https://www.postman.com/bold-station-630909/workspace/karthick/collection/10233839-e6da19a5-08ce-4538-960f-542d3ac8cf59?action=share&source=collection_link&creator=10233839"
+	},
+	"item": [
+		{
+			"name": "add-team",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"teamName\": \"Test team 2\",\r\n    \"players\": [\r\n        \"RD Gaikwad\",\r\n        \"DP Conway\",\r\n        \"MM Ali\",\r\n        \"N Jagadeesan\",\r\n        \"AT Rayudu\",\r\n        \"MS Dhoni\",\r\n        \"MJ Santner\",\r\n        \"Mukesh Choudhary\",\r\n        \"M Pathirana\",\r\n        \"YS Chahal\",\r\n        \"M Prasidh Krishna\"],\r\n    \"captain\": \"MM Ali\",\r\n    \"viceCaptain\": \"RD Gaikwad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/add-team",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"add-team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "process-result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/process-result",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"process-result"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "team-result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/team-result",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"team-result"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

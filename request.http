@@ -1,0 +1,32 @@
+
+POST http://localhost:3000/add-team
+Content-Type: application/json
+
+
+{
+    "teamName": "Test team 2",
+    "players": [
+        "RD Gaikwad",
+        "DP Conway",
+        "MM Ali",
+        "N Jagadeesan",
+        "AT Rayudu",
+        "MS Dhoni",
+        "MJ Santner",
+        "Mukesh Choudhary",
+        "M Pathirana",
+        "YS Chahal",
+        "M Prasidh Krishna"],
+    "captain": "MM Ali",
+    "viceCaptain": "RD Gaikwad"
+}
+    
+
+########
+GET  http://localhost:3000/process-result
+Content-Type: application/json
+
+########
+GET  http://localhost:3000/team-result
+Content-Type: application/json
+
